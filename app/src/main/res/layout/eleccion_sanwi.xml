@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/texto_bocadillo_caliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paredblanca">
+
+
+    <ImageView
+        android:id="@+id/mibocata_seleccion"
+        android:layout_width="166dp"
+        android:layout_height="137dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logoMiBocata"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/texto_simple"
+        android:layout_width="367dp"
+        android:layout_height="47dp"
+        android:text="Selecciona tu bocadillo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <View
+        android:id="@+id/panel_frio"
+        android:layout_width="358dp"
+        android:layout_height="205dp"
+        android:background="@color/appgreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <View
+        android:id="@+id/panel_caliente"
+        android:layout_width="358dp"
+        android:layout_height="205dp"
+        android:background="@color/butano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <TextView
+        android:id="@+id/bocadillos_frio_texto"
+        android:layout_width="285dp"
+        android:layout_height="146dp"
+        android:fontFamily="@font/irish"
+        android:text="Bocadillos Frios"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="@+id/panel_frio"
+        app:layout_constraintStart_toStartOf="@+id/panel_frio"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <TextView
+        android:id="@+id/texto_bocadillo_caliente"
+        android:layout_width="323dp"
+        android:layout_height="117dp"
+        android:fontFamily="@font/irish"
+        android:text="Bocadillo Caliente"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/panel_caliente"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/panel_caliente"
+        tools:layout_editor_absoluteY="461dp"
+        tools:ignore="DuplicateIds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
