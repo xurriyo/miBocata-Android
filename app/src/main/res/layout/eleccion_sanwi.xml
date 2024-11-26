@@ -63,16 +63,50 @@
 
     <TextView
         android:id="@+id/texto_bocadillo_caliente"
-        android:layout_width="323dp"
-        android:layout_height="117dp"
+        android:layout_width="326dp"
+        android:layout_height="140dp"
         android:fontFamily="@font/irish"
         android:text="Bocadillo Caliente"
         android:textAlignment="center"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="@+id/panel_caliente"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="@+id/panel_caliente"
-        tools:layout_editor_absoluteY="461dp"
-        tools:ignore="DuplicateIds" />
+        tools:ignore="DuplicateIds"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <ImageView
+        android:id="@+id/Icono1"
+        android:layout_width="51dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/icono2"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel_caliente"
+        app:layout_constraintVertical_bias="0.794"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/icono2"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel_caliente"
+        app:layout_constraintVertical_bias="0.907"
+        app:srcCompat="@drawable/userIcon" />
+
+    <ImageView
+        android:id="@+id/icono3"
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toEndOf="@+id/icono2"
+        app:layout_constraintTop_toBottomOf="@+id/panel_caliente"
+        app:layout_constraintVertical_bias="0.753"
+        app:srcCompat="@drawable/Invoice2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
