@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 class calendario : AppCompatActivity() {
     private lateinit var iconoinvoice: ImageView
     private lateinit var iconousuario: ImageView
+    private lateinit var logo_bocadillo: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -36,22 +37,22 @@ class calendario : AppCompatActivity() {
                 alergenos = "Gluten, lácteos"
             ),
             Bocata(
-                nombre = "Bocata vegetal",
+                nombre = "Bocata de morcilla de burgos",
                 precio = 3,
                 dia = "Martes",
                 fecha = "2024-11-28",
                 tipo = true,
-                ingredientes = "Pan, lechuga, tomate, huevo",
-                alergenos = "Gluten, huevo"
+                ingredientes = "Pan, morcilla",
+                alergenos = "Gluten, carne"
             ),
             Bocata(
-                nombre = "Bocata de chorizo",
+                nombre = "Bocata de calamares",
                 precio = 2,
                 dia = "Martes",
                 fecha = "2024-11-28",
                 tipo = false,
-                ingredientes = "Pan, chorizo",
-                alergenos = "Gluten"
+                ingredientes = "Pan, calamares",
+                alergenos = "Gluten, pescado"
             ),
             Bocata(
                 nombre = "Bocata de pollo al curry",
@@ -111,6 +112,7 @@ class calendario : AppCompatActivity() {
 
         iconoinvoice = findViewById(R.id.iconoInvoice)
         iconousuario = findViewById(R.id.iconoUsuario)
+        logo_bocadillo= findViewById(R.id.logo_bocadillo)
 
         iconoinvoice.setOnClickListener {
             val intent = Intent(this, iconoinvoice::class.java)
@@ -118,6 +120,10 @@ class calendario : AppCompatActivity() {
         }
         iconousuario.setOnClickListener {
             val intent = Intent(this, iconousuario::class.java)
+            startActivity(intent)
+        }
+        logo_bocadillo.setOnClickListener{
+            val intent= Intent(this,ElegirSandwich::class.java)
             startActivity(intent)
         }
 

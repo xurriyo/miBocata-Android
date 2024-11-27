@@ -7,6 +7,16 @@
     android:background="@drawable/paredblanca">
 
 
+    <View
+        android:id="@+id/view2"
+        android:layout_width="408dp"
+        android:layout_height="196dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/contenedor_caliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/logo_bocadillo"
         android:layout_width="149dp"
@@ -17,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logoMiBocata" />
+        app:srcCompat="@drawable/logomibocatas"/>
 
     <TextView
         android:id="@+id/dinero_bocata"
@@ -53,28 +63,29 @@
         android:id="@+id/contenedor_caliente"
         android:layout_width="188dp"
         android:layout_height="154dp"
+        android:layout_marginBottom="368dp"
         android:background="@drawable/radius_boton_login"
         android:backgroundTint="@color/butano"
         app:circularflow_radiusInDP="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dinero_alumno_texto"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <View
         android:id="@+id/contenedor_frio"
-        android:layout_width="180dp"
-        android:layout_height="151dp"
+        android:layout_width="188dp"
+        android:layout_height="154dp"
         android:background="@drawable/radius_boton_login"
         android:backgroundTint="@color/appgreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.687"
         app:layout_constraintStart_toEndOf="@+id/contenedor_caliente"
         app:layout_constraintTop_toBottomOf="@+id/logo_bocadillo"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/numero_bocadillo_caliente"
@@ -112,6 +123,18 @@
         app:layout_constraintVertical_bias="0.811" >
     </ListView>
 
+    <View
+        android:id="@+id/fondoabajo"
+        android:layout_width="408dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="3dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lista_bocatas" />
+
     <ImageView
         android:id="@+id/iconoCalendar"
         android:layout_width="59dp"
@@ -134,7 +157,7 @@
         app:layout_constraintStart_toEndOf="@+id/iconoCalendar"
         app:layout_constraintTop_toBottomOf="@+id/lista_bocatas"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/userIcon" />
+        app:srcCompat="@drawable/usericon" />
 
     <ImageView
         android:id="@+id/iconoInvoice"
@@ -147,6 +170,6 @@
         app:layout_constraintStart_toEndOf="@+id/iconoUsuario"
         app:layout_constraintTop_toBottomOf="@+id/lista_bocatas"
         app:layout_constraintVertical_bias="0.8"
-        app:srcCompat="@drawable/Invoice2" />
+        app:srcCompat="@drawable/invoice2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

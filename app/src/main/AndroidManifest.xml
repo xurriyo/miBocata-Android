@@ -21,6 +21,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ElegirSandwich"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".calendario"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Invoice"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Perfil"
+            android:exported="false">
+        </activity>
+
+
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 class Invoice : AppCompatActivity() {
     private lateinit var iconocalendario: ImageView
     private lateinit var iconousuario: ImageView
+    private lateinit var logo_bocadillo: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -112,6 +113,7 @@ class Invoice : AppCompatActivity() {
 
         iconocalendario = findViewById(R.id.iconocalendar)
         iconousuario = findViewById(R.id.iconouser)
+        logo_bocadillo=findViewById(R.id.logo_bocadillo)
 
         iconocalendario.setOnClickListener {
             val intent = Intent(this, iconocalendario::class.java)
@@ -119,6 +121,10 @@ class Invoice : AppCompatActivity() {
         }
         iconousuario.setOnClickListener {
             val intent = Intent(this, iconousuario::class.java)
+            startActivity(intent)
+        }
+        logo_bocadillo.setOnClickListener{
+            val intent= Intent (this, ElegirSandwich::class.java)
             startActivity(intent)
         }
 

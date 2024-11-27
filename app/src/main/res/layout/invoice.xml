@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logoMiBocata" />
+        app:srcCompat="@drawable/logomibocatas" />
 
     <TextView
         android:id="@+id/bocadillo_mañana"
@@ -108,17 +108,27 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bocatas_semana"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0" >
+
+    </GridView>
+
+    <View
+        android:id="@+id/fondoo"
+        android:layout_width="414dp"
+        android:layout_height="67dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="662dp" />
 
     <ImageView
         android:id="@+id/iconouser"
         android:layout_width="59dp"
         android:layout_height="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/_dynamic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridviewpocho"
         app:layout_constraintVertical_bias="0.884"
-        app:srcCompat="@drawable/userIcon"
-        tools:layout_editor_absoluteX="176dp" />
+        app:srcCompat="@drawable/usericon" />
 
     <ImageView
         android:id="@+id/iconocalendar"
@@ -128,7 +138,7 @@
         app:layout_constraintEnd_toStartOf="@+id/iconouser"
         app:layout_constraintHorizontal_bias="0.268"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/_dynamic"
+        app:layout_constraintTop_toBottomOf="@+id/gridviewpocho"
         app:layout_constraintVertical_bias="0.89"
         app:srcCompat="@drawable/calendar" />
 
@@ -140,8 +150,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toEndOf="@+id/iconouser"
-        app:layout_constraintTop_toBottomOf="@+id/_dynamic"
+        app:layout_constraintTop_toBottomOf="@+id/gridviewpocho"
         app:layout_constraintVertical_bias="0.916"
-        app:srcCompat="@drawable/Invoice2" />
+        app:srcCompat="@drawable/invoice2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
